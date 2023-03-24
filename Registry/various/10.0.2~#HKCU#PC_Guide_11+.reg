@@ -1,0 +1,27 @@
+Windows Registry Editor Version 5.00
+
+; From https://raw.githubusercontent.com/amitxv/PC-Tuning/main/bin/registry/11%2B.reg
+; disable suggestions in the search box and in search home
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsDynamicSearchBoxEnabled"=dword:00000000
+
+; disable location override
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CPSS\Store\UserLocationOverridePrivacySetting]
+"Value"=dword:00000000
+
+; disable narrator keyboard shortcut
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Narrator\NoRoam]
+"WinEnterLaunchEnabled"=dword:00000000
+
+; disable typing insights
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\input\Settings]
+"InsightsEnabled"=dword:00000000
+
+; disable snap bar
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"EnableSnapBar"=dword:00000000

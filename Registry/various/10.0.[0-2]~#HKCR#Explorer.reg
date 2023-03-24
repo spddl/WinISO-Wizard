@@ -1,0 +1,37 @@
+Windows Registry Editor Version 5.00
+
+;   HKEY_CLASSES_ROOT\
+; becomes
+;   HKEY_LOCAL_MACHINE\SOFTWARE\Classes\
+
+;Command Prompt in directory shit + right-click context menu
+;Tutorial: https://www.tenforums.com/tutorials/72024-open-command-window-here-add-windows-10-a.html
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd2]
+@="@shell32.dll,-8506"
+"Extended"=""
+"Icon"="imageres.dll,-5323"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd2\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd2]
+@="@shell32.dll,-8506"
+"Extended"=""
+"Icon"="imageres.dll,-5323"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd2\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+[HKEY_CLASSES_ROOT\Drive\shell\cmd2]
+@="@shell32.dll,-8506"
+"Extended"=""
+"Icon"="imageres.dll,-5323"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Drive\shell\cmd2\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+[-HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\cmd2]

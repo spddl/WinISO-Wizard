@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+;   HKEY_CLASSES_ROOT\
+; becomes
+;   HKEY_LOCAL_MACHINE\SOFTWARE\Classes\
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\txtfile]
+@="Text Document"

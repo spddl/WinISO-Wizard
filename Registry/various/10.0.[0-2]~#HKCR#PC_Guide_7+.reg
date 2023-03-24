@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+;   HKEY_CLASSES_ROOT\
+; becomes
+;   HKEY_LOCAL_MACHINE\SOFTWARE\Classes\
+
+; remove pin to quick access in context menu
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\pintohome]
+
+; set .ps1 file types to open with PowerShell by default
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Microsoft.PowerShellScript.1\Shell\Open\Command]
+@="\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" \"%1\""

@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+;Disable Netowrk in navigation pane
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}\ShellFolder]
+"Attributes"=dword:b0940064
+
+;Hide Quick access
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"HubMode"=dword:00000001

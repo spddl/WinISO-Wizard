@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+; Processor scheduling
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:0000002a
