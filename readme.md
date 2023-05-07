@@ -144,5 +144,5 @@ The main tools in this project are:
 * Powershell with the DISM library ([documentation](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/use-dism-in-windows-powershell-s14))
 * Oscdimg ([documentation](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/oscdimg-command-line-options))
 * GoOfflineReg (include) ([repo](https://github.com/spddl/GoOfflineReg))
-* 7zip (include) ([homepage](https://www.7-zip.de/))
+* 7zip (include) ([homepage](https://www.7-zip.org))
 * PowerRun (include) ([homepage](https://www.sordum.org/9416/powerrun-v1-6-run-with-highest-privileges/)) (alternatively NSudo, NanaRun would surely work as well)
